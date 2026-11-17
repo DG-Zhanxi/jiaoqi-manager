@@ -1,0 +1,20 @@
+{
+  "tool": "华为云码道CodeArts代码智能体",
+  "session_title": "Python 后端核心实现：认证、排班与测试",
+  "file_mappings": 51,
+  "recorded_events": 128,
+  "modules": [
+    "backend/security.py",
+    "backend/models.py",
+    "backend/adapters/hfut.py",
+    "backend/scheduling/engine.py",
+    "backend/scheduling/validator.py"
+  ],
+  "deployment": {
+    "platform": "华为云AI开发者空间",
+    "access": "DevBridge HTTPS",
+    "application_port": 8788,
+    "storage": "SQLite",
+    "model_provider": "Kimi"
+  }
+}

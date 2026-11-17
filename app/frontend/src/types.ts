@@ -1,0 +1,13 @@
+export type User={id:number;username:string;role:string};
+export type Workspace={id:number;name:string;role:string;data_revision:number;published_plan_id:number|null};
+export type Candidate={resource_id:number;duration_seconds:number};
+export type Operation={id:number;sequence:number;name:string;setup_seconds:number;status:string;fixed_start_at?:string|null;fixed_resource_id?:number|null;candidates:Candidate[]};
+export type Order={id:number;order_no:string;product_name:string;quantity:number;dataset_id?:number|null;release_at:string;due_at:string|null;priority:number;status:string;materials?:{material_id:number;quantity:number}[];operations:Operation[]};
+export type Resource={id:number;code:string;name:string;resource_type:string;capabilities:string[];is_active:boolean;calendar:{weekday:number;start_minute:number;end_minute:number}[]|null;downtime:{id:number;start_at:string;end_at:string;reason:string}[]};
+export type Task={id:number;operation_id:number;resource_id:number;start_at:string;end_at:string;duration_seconds:number;is_fixed:boolean;execution_state:string};
+export type Plan={id:number;name:string;status:string;strategy:string;created_by:number;data_revision:number;solver_status:string;solve_seconds:number;objective_value:number|null;best_bound:number|null;tasks:Task[];validation:{valid?:boolean;errors?:string[];metrics?:Record<string,number>};reschedule_meta:Record<string,unknown>;model_snapshot:Record<string,unknown>;created_at:string;base_plan_id?:number|null};
+export type Event={id:number;event_type:string;title:string;occurred_at:string;known_at:string;resource_id:number|null;order_id:number|null;duration_seconds:number|null;impact:Record<string,unknown>|null;payload:Record<string,unknown>};
+export type Dataset={id:number;name:string;source_type:string;instance_key:string;source_doi:string;license:string;status:string;row_counts:Record<string,number>;jobs:unknown[]};
+export type ScheduleJob={id:number;status:string;message:string;plan_id:number|null;solver_status:string|null;error:string|null;result:Record<string,unknown>};
+export type PageKey='overview'|'orders'|'schedule'|'events'|'plans'|'resources'|'data'|'workshop'|'settings';
+export interface AppData{user:User;workspace:Workspace;orders:Order[];resources:Resource[];plans:Plan[];events:Event[];datasets:Dataset[];refresh:()=>Promise<void>;navigate:(p:PageKey)=>void;notify:(text:string)=>void;busy:boolean;}

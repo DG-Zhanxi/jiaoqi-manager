@@ -1,0 +1,30 @@
+# Local state and credentials
+.env
+.env.*
+!.env.example
+secrets/
+runtime/
+app/var/
+backups/
+*.db
+*.db-*
+*.sqlite*
+*.key
+*.pem
+*.pid
+*.log
+# Development caches
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.tsbuildinfo
+.DS_Store
+# Newly generated experiment runs
+experiments/*/
+!experiments/1/
+experiments/1/*
+!experiments/1/0066ca7557924981aefb11cd1cb07f0e.json
+!experiments/1/2c44300235aa4672901d96ef1adbc621.json
+reports/

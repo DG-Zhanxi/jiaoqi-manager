@@ -1,0 +1,47 @@
+[
+  {
+    "path": "data/processed/automotive_biw.json",
+    "sha256": "92dfa9514918df84ce7909a46df96db1f920c32a01bd2477336a7921010184a4",
+    "bytes": 13154
+  },
+  {
+    "path": "data/raw/automotive/ALGORITHMS.py",
+    "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+    "bytes": 29418
+  },
+  {
+    "path": "data/raw/open_alternatives/hfut/a dataset.xlsx",
+    "sha256": "e8d07c0a99db42445f85ed4d7b431570d7e7a89bf62e029b5f51a7ec0d257984",
+    "bytes": 85264
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/1-Machine.xlsx",
+    "sha256": "04a8da3eb1f141d79ef47255e61c6b7b1d5eb332f75c697c9251fa8ac495fd21",
+    "bytes": 10270
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/2-Process.xlsx",
+    "sha256": "f8a245e79e08972ced47945083ed54fd042dc4ab866603cd471b70630a59fd65",
+    "bytes": 9452
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/3-Routing.xlsx",
+    "sha256": "6a35e5542d33291ef4ce3ad3888302494db50991fc46e91cd5d824cec6e8466b",
+    "bytes": 9451
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/4-Width.xlsx",
+    "sha256": "da5f863ea3d67123df380c7771cc0392cf3593e466cb1254dbf26435e6b8bbbe",
+    "bytes": 19362
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/5-Product Type.xlsx",
+    "sha256": "4b5605688d6f3f95126095469e947fa834c90a257ac043810a91fda8830ab9fd",
+    "bytes": 9929
+  },
+  {
+    "path": "data/raw/open_alternatives/packaging/6-Data Order.xlsx",
+    "sha256": "2014698a7cf567f24fb630bd8e23dab30c92b586dee1ff65803d7473a0f9420b",
+    "bytes": 12644
+  }
+]
