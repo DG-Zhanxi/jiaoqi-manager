@@ -75,6 +75,10 @@ python app/scripts/复现实验.py --suite full --seconds 5 --seeds 3 --workspac
 
 ![三维焊装](docs/images/三维焊装.png)
 
+## 版本验证
+
+开源版已通过56项自动测试、21次焊装复验、前端构建及全新数据库的注册和工作区创建。[验证记录](docs/版本验证.json)
+
 ## 开发
 
 ```bash
