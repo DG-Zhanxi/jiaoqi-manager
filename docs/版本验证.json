@@ -8,5 +8,18 @@
   "first_user_admin": "passed",
   "workspace_creation": "passed",
   "archived_experiment_runs": 693,
-  "archived_valid": 693
+  "archived_valid": 693,
+  "skills_validation": {
+    "deployment_tests": 64,
+    "cloud_app_tests": 54,
+    "cloud_research_runs": 21,
+    "cloud_research_all_valid": true,
+    "cloud_research_run_id": "5197be42e86f424dbc3f534acacb5952",
+    "service_link_tests": 4,
+    "deployment_pid_before": 15165,
+    "deployment_pid_after": 10778,
+    "database_tables_unchanged": 22,
+    "public_health": "ok",
+    "cost_of_new_service_cny": 0
+  }
 }

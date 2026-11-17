@@ -1,0 +1,167 @@
+{
+  "deploy_timestamp": "2026-11-17T07:36:49Z",
+  "before": {
+    "pid": 15165,
+    "health": {
+      "status": "ok",
+      "app": "交期管家"
+    },
+    "db_table_counts": {
+      "users": 3,
+      "bootstrap_state": 1,
+      "workspaces": 3,
+      "user_sessions": 27,
+      "workspace_members": 4,
+      "datasets": 3,
+      "resources": 23,
+      "materials": 0,
+      "plans": 8,
+      "schedule_jobs": 7,
+      "audit_logs": 48,
+      "dataset_jobs": 20,
+      "downtimes": 0,
+      "orders": 79,
+      "dataset_operations": 60,
+      "order_materials": 0,
+      "material_allocations": 0,
+      "operations": 297,
+      "dataset_machine_options": 202,
+      "operation_candidates": 869,
+      "plan_tasks": 447,
+      "events": 1
+    }
+  },
+  "after": {
+    "pid": 10778,
+    "health": {
+      "status": "ok",
+      "app": "交期管家"
+    },
+    "db_table_counts": {
+      "users": 3,
+      "bootstrap_state": 1,
+      "workspaces": 3,
+      "user_sessions": 27,
+      "workspace_members": 4,
+      "datasets": 3,
+      "resources": 23,
+      "materials": 0,
+      "plans": 8,
+      "schedule_jobs": 7,
+      "audit_logs": 48,
+      "dataset_jobs": 20,
+      "downtimes": 0,
+      "orders": 79,
+      "dataset_operations": 60,
+      "order_materials": 0,
+      "material_allocations": 0,
+      "operations": 297,
+      "dataset_machine_options": 202,
+      "operation_candidates": 869,
+      "plan_tasks": 447,
+      "events": 1
+    }
+  },
+  "deploy_log_lines": [
+    {
+      "timestamp": "2026-11-17T07:36:49.354920+00:00",
+      "level": "INFO",
+      "event": "deploy.start"
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.355015+00:00",
+      "level": "INFO",
+      "event": "preflight.fixed_config",
+      "root_ok": true,
+      "port_ok": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.355065+00:00",
+      "level": "INFO",
+      "event": "preflight.root",
+      "exists": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.399292+00:00",
+      "level": "INFO",
+      "event": "preflight.health",
+      "ok": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.399941+00:00",
+      "level": "INFO",
+      "event": "preflight.pid",
+      "pid": 15165,
+      "verified": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.400020+00:00",
+      "level": "INFO",
+      "event": "preflight.disk",
+      "free_gb": 45.0,
+      "sufficient": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.400090+00:00",
+      "level": "INFO",
+      "event": "preflight.complete",
+      "all_passed": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.400250+00:00",
+      "level": "INFO",
+      "event": "deploy.lock_acquired"
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.408243+00:00",
+      "level": "INFO",
+      "event": "backup.db",
+      "size": 495616
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.410318+00:00",
+      "level": "INFO",
+      "event": "backup.verify",
+      "ok": true
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.420302+00:00",
+      "level": "INFO",
+      "event": "backup.code",
+      "items": 12
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.420690+00:00",
+      "level": "INFO",
+      "event": "deploy.pid_verified",
+      "pid": 15165
+    },
+    {
+      "timestamp": "2026-11-17T07:36:49.420733+00:00",
+      "level": "INFO",
+      "event": "deploy.stopping",
+      "pid": 15165
+    },
+    {
+      "timestamp": "2026-11-17T07:36:50.421314+00:00",
+      "level": "INFO",
+      "event": "deploy.stopped",
+      "pid": 15165
+    },
+    {
+      "timestamp": "2026-11-17T07:36:50.421449+00:00",
+      "level": "INFO",
+      "event": "deploy.starting"
+    },
+    {
+      "timestamp": "2026-11-17T07:36:54.642942+00:00",
+      "level": "INFO",
+      "event": "deploy.complete",
+      "ok": true
+    }
+  ],
+  "exit_code": 0,
+  "result": "success",
+  "db_integrity_check": true,
+  "pid_changed": true
+}

@@ -1,0 +1,7555 @@
+{
+  "id": "5197be42e86f424dbc3f534acacb5952",
+  "workspace_id": 999,
+  "suite": "biw",
+  "status": "completed",
+  "created_at": "2026-11-17T07:53:30.105975+00:00",
+  "environment": {
+    "python": "3.11.16",
+    "platform": "Linux-5.10.0-182.0.0.95.r3353_274.hce2.aarch64-aarch64-with-glibc2.34",
+    "ortools": "9.15.6755"
+  },
+  "protocol": {
+    "revision": 2,
+    "time_limit_seconds": 5,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "workers": 1,
+    "static_algorithms": [
+      "FCFS",
+      "EDD",
+      "SPT",
+      "CP-SAT"
+    ],
+    "dynamic_algorithms": [
+      "FCFS-repair",
+      "CP-SAT-global",
+      "CP-SAT-local"
+    ],
+    "dynamic_event": "resource outage at operation boundary; duration=60% selected task duration rounded UP to 0.1 second",
+    "known_at": "outage start; fixed all tasks started before decision time",
+    "hfut_batch_policy": "unsplit lot",
+    "hfut_due_date_rule": "1.5 * minimum chain duration; not a supplied customer date"
+  },
+  "results": [
+    {
+      "algorithm": "FCFS",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0008997300028568134,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "EDD",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0008532900028512813,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "SPT",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 174.8,
+          "end": 226.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 248.6,
+          "end": 383.7
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 0,
+          "start": 452.7,
+          "end": 655.7
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 383.7,
+          "end": 421.7
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 0,
+          "start": 862.7,
+          "end": 1085.7
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 421.7,
+          "end": 457.7
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 421.7,
+          "end": 452.7
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 421.7,
+          "end": 667.7
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 452.7,
+          "end": 696.7
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1085.7,
+          "end": 1321.7
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 38.0,
+          "end": 117.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 139.3,
+          "end": 245.7
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 146.4,
+          "end": 248.6
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 95.0,
+          "end": 258.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 245.7,
+          "end": 408.7
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 1,
+          "start": 117.0,
+          "end": 146.4
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 29.4
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 667.7,
+          "end": 1070.7
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1473.7
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 124.0,
+          "end": 174.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 124.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 664.7,
+          "end": 965.7
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1321.7,
+          "end": 1534.7
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 38.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 0,
+          "end": 60.2
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 79.1,
+          "end": 139.3
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0,
+          "end": 270.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 696.7,
+          "end": 966.7
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 966.7,
+          "end": 1045.7
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 1,
+          "start": 29.4,
+          "end": 79.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 457.7,
+          "end": 664.7
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 655.7,
+          "end": 862.7
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1662.7
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1473.7,
+          "end": 2059.7
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2059.7,
+      "wall_time": 0.0010696399986045435,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2059.7,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 130.8,
+          "end": 182.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 0,
+          "start": 207.0,
+          "end": 400.0
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 1025.9,
+          "end": 1168.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 400.0,
+          "end": 438.0
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 869.8,
+          "end": 1025.9
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 479.0,
+          "end": 594.0
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 574.0,
+          "end": 689.0
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 905.4,
+          "end": 941.4
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 635.1,
+          "end": 656.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1265.0,
+          "end": 1511.0
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1403.9,
+          "end": 1647.9
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 0,
+          "start": 399.1,
+          "end": 635.1
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 0,
+          "start": 247.1,
+          "end": 399.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 701.0,
+          "end": 803.2
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 316.0,
+          "end": 479.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 411.0,
+          "end": 574.0
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 863.4,
+          "end": 905.4
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 144.9,
+          "end": 186.9
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0.0,
+          "end": 403.0
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 730.9,
+          "end": 1133.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 182.0,
+          "end": 232.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 232.8,
+          "end": 279.2
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 400.0,
+          "end": 701.0
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 656.8,
+          "end": 869.8
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 594.0,
+          "end": 689.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 316.0,
+          "end": 411.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 803.2,
+          "end": 863.4
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 186.9,
+          "end": 247.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 403.0,
+          "end": 673.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1133.9,
+          "end": 1403.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1403.9,
+          "end": 1482.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 1,
+          "start": 1168.0,
+          "end": 1217.7
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 316.0
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 316.0
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 0.0,
+          "end": 207.0
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 144.9
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 673.0,
+          "end": 1265.0
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 144.9,
+          "end": 730.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 130.8
+        }
+      ],
+      "makespan": 1647.9,
+      "wall_time": 0.012560710005345754,
+      "best_bound": 1647.9,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1647.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "time_limit_seconds": 5,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "FCFS-repair",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 664.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 664.1,
+          "end": 827.1
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 664.1,
+          "end": 706.1
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 706.1,
+          "end": 919.1
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 919.1,
+          "end": 1005.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1005.1,
+          "end": 1076.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 827.1,
+          "end": 1143.1
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1076.1,
+          "end": 1283.1
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0003568499960238114,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "changed_operations": 8,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-global",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 0,
+          "start": 702.6,
+          "end": 854.6
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 854.6,
+          "end": 1017.6
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 854.6,
+          "end": 896.6
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1593.8,
+          "end": 1996.8
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 982.6,
+          "end": 1195.6
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 896.6,
+          "end": 982.6
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1323.8,
+          "end": 1593.8
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1593.8,
+          "end": 1672.8
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1195.6,
+          "end": 1266.6
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 493.8,
+          "end": 809.8
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 702.6
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 737.8,
+          "end": 1323.8
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 1996.8,
+      "wall_time": 0.008622950001154095,
+      "best_bound": 1996.8,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1996.8,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "time_limit_seconds": 5,
+      "changed_operations": 12,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-local",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 664.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 664.1,
+          "end": 827.1
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 664.1,
+          "end": 706.1
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 706.1,
+          "end": 919.1
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 919.1,
+          "end": 1005.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1005.1,
+          "end": 1076.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 827.1,
+          "end": 1143.1
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1076.1,
+          "end": 1283.1
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 1.8090276300063124,
+      "best_bound": null,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 0,
+      "time_limit_seconds": 3.0,
+      "neighborhood_size": 15,
+      "changed_operations": 8,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "FCFS",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0011342299985699356,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "EDD",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0008335400052601472,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "SPT",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 174.8,
+          "end": 226.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 248.6,
+          "end": 383.7
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 0,
+          "start": 452.7,
+          "end": 655.7
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 383.7,
+          "end": 421.7
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 0,
+          "start": 862.7,
+          "end": 1085.7
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 421.7,
+          "end": 457.7
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 421.7,
+          "end": 452.7
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 421.7,
+          "end": 667.7
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 452.7,
+          "end": 696.7
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1085.7,
+          "end": 1321.7
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 38.0,
+          "end": 117.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 139.3,
+          "end": 245.7
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 146.4,
+          "end": 248.6
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 95.0,
+          "end": 258.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 245.7,
+          "end": 408.7
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 1,
+          "start": 117.0,
+          "end": 146.4
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 29.4
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 667.7,
+          "end": 1070.7
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1473.7
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 124.0,
+          "end": 174.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 124.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 664.7,
+          "end": 965.7
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1321.7,
+          "end": 1534.7
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 38.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 0,
+          "end": 60.2
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 79.1,
+          "end": 139.3
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0,
+          "end": 270.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 696.7,
+          "end": 966.7
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 966.7,
+          "end": 1045.7
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 1,
+          "start": 29.4,
+          "end": 79.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 457.7,
+          "end": 664.7
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 655.7,
+          "end": 862.7
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1662.7
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1473.7,
+          "end": 2059.7
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2059.7,
+      "wall_time": 0.0010646099981386214,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2059.7,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 130.8,
+          "end": 182.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 146.0,
+          "end": 281.1
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 0,
+          "start": 866.1,
+          "end": 1069.1
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 281.1,
+          "end": 319.1
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 0,
+          "start": 430.1,
+          "end": 653.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 479.0,
+          "end": 594.0
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 574.0,
+          "end": 689.0
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 677.3,
+          "end": 713.3
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 399.1,
+          "end": 430.1
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1265.0,
+          "end": 1511.0
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1403.9,
+          "end": 1647.9
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 1069.1,
+          "end": 1234.3
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 0,
+          "start": 247.1,
+          "end": 399.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 0,
+          "start": 0.0,
+          "end": 146.0
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 316.0,
+          "end": 479.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 411.0,
+          "end": 574.0
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 635.3,
+          "end": 677.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 144.9,
+          "end": 186.9
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0.0,
+          "end": 403.0
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 730.9,
+          "end": 1133.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 182.0,
+          "end": 232.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 232.8,
+          "end": 279.2
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 1,
+          "start": 281.1,
+          "end": 430.2
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 653.1,
+          "end": 866.1
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 594.0,
+          "end": 689.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 316.0,
+          "end": 411.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 575.1,
+          "end": 635.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 186.9,
+          "end": 247.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 403.0,
+          "end": 673.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1133.9,
+          "end": 1403.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 1,
+          "start": 1403.9,
+          "end": 1459.2
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1234.3,
+          "end": 1305.3
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 316.0
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 316.0
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 1,
+          "start": 430.2,
+          "end": 575.1
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 144.9
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 673.0,
+          "end": 1265.0
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 144.9,
+          "end": 730.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 130.8
+        }
+      ],
+      "makespan": 1647.9,
+      "wall_time": 0.010040890003438108,
+      "best_bound": 1647.9,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1647.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "time_limit_seconds": 5,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "FCFS-repair",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 359.5,
+          "end": 605.5
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 605.5,
+          "end": 1008.5
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1008.5,
+          "end": 1411.5
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1008.5,
+          "end": 1278.5
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1411.5,
+          "end": 1681.5
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1681.5,
+          "end": 1760.5
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1278.5,
+          "end": 1870.5
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1681.5,
+          "end": 2267.5
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2267.5,
+      "wall_time": 0.0005512299976544455,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2267.5,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "changed_operations": 8,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R5",
+          "start": 211.9,
+          "end": 359.5
+        }
+      ],
+      "decision_time": 211.9,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        17,
+        23,
+        24,
+        25,
+        28,
+        30
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-global",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 766.2,
+          "end": 922.3
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 375.3
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 316.0,
+          "end": 347.0
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1624.5,
+          "end": 1870.5
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 347.0,
+          "end": 591.0
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 0,
+          "start": 554.0,
+          "end": 706.0
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 706.0,
+          "end": 869.0
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 375.3,
+          "end": 417.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1225.2,
+          "end": 1267.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 629.5,
+          "end": 1032.5
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1447.0,
+          "end": 1850.0
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 417.3,
+          "end": 718.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1225.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 975.3,
+          "end": 1035.5
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 706.0,
+          "end": 766.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 359.5,
+          "end": 629.5
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1177.0,
+          "end": 1447.0
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 1,
+          "start": 1447.0,
+          "end": 1502.3
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 326.9,
+          "end": 642.9
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 347.0,
+          "end": 554.0
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1032.5,
+          "end": 1624.5
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 591.0,
+          "end": 1177.0
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 1870.5,
+      "wall_time": 0.014777290001802612,
+      "best_bound": 1870.5,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1870.5,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "time_limit_seconds": 5,
+      "changed_operations": 22,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R5",
+          "start": 211.9,
+          "end": 359.5
+        }
+      ],
+      "decision_time": 211.9,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        17,
+        23,
+        24,
+        25,
+        28,
+        30
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-local",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1032.5,
+          "end": 1278.5
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 359.5,
+          "end": 762.5
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 762.5,
+          "end": 1032.5
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1278.5,
+          "end": 1870.5
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 3.0069468000001507,
+      "best_bound": null,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 1,
+      "time_limit_seconds": 3.0,
+      "neighborhood_size": 15,
+      "changed_operations": 4,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R5",
+          "start": 211.9,
+          "end": 359.5
+        }
+      ],
+      "decision_time": 211.9,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        17,
+        23,
+        24,
+        25,
+        28,
+        30
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "FCFS",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0011695400025928393,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "EDD",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 493.8,
+          "end": 600.2
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 600.2,
+          "end": 763.2
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 600.2,
+          "end": 642.2
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 642.2,
+          "end": 855.2
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 855.2,
+          "end": 941.2
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 941.2,
+          "end": 1012.2
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 763.2,
+          "end": 1079.2
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1012.2,
+          "end": 1219.2
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.0008731399939279072,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "SPT",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 174.8,
+          "end": 226.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 248.6,
+          "end": 383.7
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 0,
+          "start": 452.7,
+          "end": 655.7
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 383.7,
+          "end": 421.7
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 0,
+          "start": 862.7,
+          "end": 1085.7
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 421.7,
+          "end": 536.7
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 421.7,
+          "end": 457.7
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 421.7,
+          "end": 452.7
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 421.7,
+          "end": 667.7
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 452.7,
+          "end": 696.7
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1085.7,
+          "end": 1321.7
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 38.0,
+          "end": 117.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 139.3,
+          "end": 245.7
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 146.4,
+          "end": 248.6
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 95.0,
+          "end": 258.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 245.7,
+          "end": 408.7
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 1,
+          "start": 117.0,
+          "end": 146.4
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 29.4
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 667.7,
+          "end": 1070.7
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1473.7
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 124.0,
+          "end": 174.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 124.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 664.7,
+          "end": 965.7
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1321.7,
+          "end": 1534.7
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 38.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 1,
+          "start": 0,
+          "end": 60.2
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 1,
+          "start": 79.1,
+          "end": 139.3
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0,
+          "end": 270.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 696.7,
+          "end": 966.7
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 966.7,
+          "end": 1045.7
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 1,
+          "start": 29.4,
+          "end": 79.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 536.7,
+          "end": 852.7
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 457.7,
+          "end": 664.7
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 655.7,
+          "end": 862.7
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1070.7,
+          "end": 1662.7
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1473.7,
+          "end": 2059.7
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2059.7,
+      "wall_time": 0.0010738300043158233,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2059.7,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 228.0,
+          "end": 279.2
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 357.9,
+          "end": 500.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 1072.4,
+          "end": 1228.5
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 316.0,
+          "end": 431.0
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 0,
+          "start": 211.9,
+          "end": 247.9
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 0,
+          "start": 935.0,
+          "end": 966.0
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 270.0,
+          "end": 516.0
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1403.9,
+          "end": 1647.9
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 0,
+          "start": 586.0,
+          "end": 822.0
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 38.0,
+          "end": 117.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 966.0,
+          "end": 1072.4
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 439.0,
+          "end": 541.2
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 642.9,
+          "end": 805.9
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 1072.4,
+          "end": 1235.4
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 247.9,
+          "end": 289.9
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 893.0,
+          "end": 935.0
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 516.0,
+          "end": 919.0
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1000.9,
+          "end": 1403.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 124.0,
+          "end": 174.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 77.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 77.6,
+          "end": 124.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 1,
+          "start": 289.9,
+          "end": 439.0
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 144.9,
+          "end": 357.9
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 431.0,
+          "end": 526.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 541.2,
+          "end": 627.2
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 500.0,
+          "end": 586.0
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 0.0,
+          "end": 270.0
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 730.9,
+          "end": 1000.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1000.9,
+          "end": 1079.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 822.0,
+          "end": 893.0
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 642.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 316.0
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 1,
+          "start": 627.2,
+          "end": 772.1
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 144.9
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 919.0,
+          "end": 1511.0
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 144.9,
+          "end": 730.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 174.8,
+          "end": 228.0
+        }
+      ],
+      "makespan": 1647.9,
+      "wall_time": 0.015572479998809285,
+      "best_bound": 1647.9,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1647.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "time_limit_seconds": 5,
+      "case": "BIW-43",
+      "phase": "static",
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "FCFS-repair",
+      "status": "FEASIBLE",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 664.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 664.1,
+          "end": 827.1
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 664.1,
+          "end": 706.1
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 706.1,
+          "end": 919.1
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 919.1,
+          "end": 1005.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1005.1,
+          "end": 1076.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 827.1,
+          "end": 1143.1
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1076.1,
+          "end": 1283.1
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 0.00035264000325696543,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "changed_operations": 8,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-global",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 0,
+          "start": 702.6,
+          "end": 854.6
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 854.6,
+          "end": 1017.6
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 854.6,
+          "end": 896.6
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1593.8,
+          "end": 1996.8
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 982.6,
+          "end": 1195.6
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 896.6,
+          "end": 982.6
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1323.8,
+          "end": 1593.8
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1593.8,
+          "end": 1672.8
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1195.6,
+          "end": 1266.6
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 493.8,
+          "end": 809.8
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 702.6
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 737.8,
+          "end": 1323.8
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 1996.8,
+      "wall_time": 0.00931074000254739,
+      "best_bound": 1996.8,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 1996.8,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "time_limit_seconds": 5,
+      "changed_operations": 12,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    },
+    {
+      "algorithm": "CP-SAT-local",
+      "status": "OPTIMAL",
+      "tasks": [
+        {
+          "id": 1,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 0.0,
+          "end": 38.8
+        },
+        {
+          "id": 2,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 38.8,
+          "end": 90.0
+        },
+        {
+          "id": 3,
+          "resource": "R3",
+          "mode": 1,
+          "start": 38.8,
+          "end": 173.9
+        },
+        {
+          "id": 4,
+          "resource": "R4",
+          "mode": 1,
+          "start": 173.9,
+          "end": 316.0
+        },
+        {
+          "id": 5,
+          "resource": "R7",
+          "mode": 0,
+          "start": 173.9,
+          "end": 211.9
+        },
+        {
+          "id": 6,
+          "resource": "R4",
+          "mode": 1,
+          "start": 316.0,
+          "end": 472.1
+        },
+        {
+          "id": 7,
+          "resource": "R1",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 8,
+          "resource": "R2",
+          "mode": 0,
+          "start": 211.9,
+          "end": 326.9
+        },
+        {
+          "id": 9,
+          "resource": "R3",
+          "mode": 1,
+          "start": 211.9,
+          "end": 237.1
+        },
+        {
+          "id": 10,
+          "resource": "R4",
+          "mode": 1,
+          "start": 472.1,
+          "end": 493.8
+        },
+        {
+          "id": 11,
+          "resource": "R5",
+          "mode": 0,
+          "start": 211.9,
+          "end": 457.9
+        },
+        {
+          "id": 12,
+          "resource": "R6",
+          "mode": 0,
+          "start": 493.8,
+          "end": 737.8
+        },
+        {
+          "id": 13,
+          "resource": "R4",
+          "mode": 1,
+          "start": 0.0,
+          "end": 165.2
+        },
+        {
+          "id": 14,
+          "resource": "R7",
+          "mode": 0,
+          "start": 0.0,
+          "end": 79.0
+        },
+        {
+          "id": 15,
+          "resource": "R4",
+          "mode": 1,
+          "start": 557.7,
+          "end": 664.1
+        },
+        {
+          "id": 16,
+          "resource": "R3",
+          "mode": 1,
+          "start": 237.1,
+          "end": 339.3
+        },
+        {
+          "id": 17,
+          "resource": "R1",
+          "mode": 0,
+          "start": 0.0,
+          "end": 163.0
+        },
+        {
+          "id": 18,
+          "resource": "R2",
+          "mode": 0,
+          "start": 664.1,
+          "end": 827.1
+        },
+        {
+          "id": 19,
+          "resource": "R3",
+          "mode": 0,
+          "start": 339.3,
+          "end": 381.3
+        },
+        {
+          "id": 20,
+          "resource": "R4",
+          "mode": 0,
+          "start": 664.1,
+          "end": 706.1
+        },
+        {
+          "id": 21,
+          "resource": "R5",
+          "mode": 0,
+          "start": 457.9,
+          "end": 860.9
+        },
+        {
+          "id": 22,
+          "resource": "R6",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1263.9
+        },
+        {
+          "id": 23,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 90.0,
+          "end": 140.8
+        },
+        {
+          "id": 24,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 140.8,
+          "end": 179.6
+        },
+        {
+          "id": 25,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 179.6,
+          "end": 226.0
+        },
+        {
+          "id": 26,
+          "resource": "R3",
+          "mode": 0,
+          "start": 381.3,
+          "end": 682.3
+        },
+        {
+          "id": 27,
+          "resource": "R4",
+          "mode": 0,
+          "start": 706.1,
+          "end": 919.1
+        },
+        {
+          "id": 28,
+          "resource": "R7",
+          "mode": 0,
+          "start": 79.0,
+          "end": 117.0
+        },
+        {
+          "id": 29,
+          "resource": "R1",
+          "mode": 0,
+          "start": 326.9,
+          "end": 421.9
+        },
+        {
+          "id": 30,
+          "resource": "R2",
+          "mode": 0,
+          "start": 0.0,
+          "end": 95.0
+        },
+        {
+          "id": 31,
+          "resource": "R3",
+          "mode": 0,
+          "start": 682.3,
+          "end": 768.3
+        },
+        {
+          "id": 32,
+          "resource": "R4",
+          "mode": 0,
+          "start": 919.1,
+          "end": 1005.1
+        },
+        {
+          "id": 33,
+          "resource": "R5",
+          "mode": 0,
+          "start": 860.9,
+          "end": 1130.9
+        },
+        {
+          "id": 34,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1263.9,
+          "end": 1533.9
+        },
+        {
+          "id": 35,
+          "resource": "R3",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 1612.9
+        },
+        {
+          "id": 36,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1005.1,
+          "end": 1076.1
+        },
+        {
+          "id": 37,
+          "resource": "R1",
+          "mode": 0,
+          "start": 421.9,
+          "end": 737.9
+        },
+        {
+          "id": 38,
+          "resource": "R2",
+          "mode": 0,
+          "start": 827.1,
+          "end": 1143.1
+        },
+        {
+          "id": 39,
+          "resource": "R3",
+          "mode": 0,
+          "start": 768.3,
+          "end": 975.3
+        },
+        {
+          "id": 40,
+          "resource": "R4",
+          "mode": 0,
+          "start": 1076.1,
+          "end": 1283.1
+        },
+        {
+          "id": 41,
+          "resource": "R5",
+          "mode": 0,
+          "start": 1130.9,
+          "end": 1722.9
+        },
+        {
+          "id": 42,
+          "resource": "R6",
+          "mode": 0,
+          "start": 1533.9,
+          "end": 2119.9
+        },
+        {
+          "id": 43,
+          "resource": "AGV",
+          "mode": 0,
+          "start": 226.0,
+          "end": 279.2
+        }
+      ],
+      "makespan": 2119.9,
+      "wall_time": 1.8055899099999806,
+      "best_bound": null,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "labor_used": 80,
+        "makespan": 2119.9,
+        "tardiness": 0,
+        "late_orders": 0,
+        "checks": [
+          "coverage",
+          "duration",
+          "eligibility",
+          "precedence",
+          "resource_capacity",
+          "release",
+          "decision_time",
+          "outages",
+          "fixed_tasks",
+          "labor_budget"
+        ]
+      },
+      "seed": 2,
+      "time_limit_seconds": 3.0,
+      "neighborhood_size": 15,
+      "changed_operations": 8,
+      "case": "BIW-43",
+      "phase": "dynamic",
+      "event": [
+        {
+          "resource": "R4",
+          "start": 493.8,
+          "end": 557.7
+        }
+      ],
+      "decision_time": 493.8,
+      "fixed_task_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        37,
+        43
+      ],
+      "source": {
+        "doi": "10.17632/gswbxhjmnw.1",
+        "sha256": "41da02461c119163d9c21c5796ac5857323efe9904678f47916fc20e217d8389",
+        "institution": "Changchun University of Technology",
+        "time_unit": "seconds"
+      },
+      "task_count": 43,
+      "resource_count": 8
+    }
+  ],
+  "summary": [
+    {
+      "algorithm": "CP-SAT",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 1647.9,
+      "solve_seconds_mean": 0.012724693335864382,
+      "changed_operations_mean": 0
+    },
+    {
+      "algorithm": "CP-SAT-global",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 1954.7,
+      "solve_seconds_mean": 0.0109036600018347,
+      "changed_operations_mean": 15.333333333333334
+    },
+    {
+      "algorithm": "CP-SAT-local",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 2119.9,
+      "solve_seconds_mean": 2.2071881133354814,
+      "changed_operations_mean": 6.666666666666667
+    },
+    {
+      "algorithm": "EDD",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 2119.9,
+      "solve_seconds_mean": 0.0008533233340131119,
+      "changed_operations_mean": 0
+    },
+    {
+      "algorithm": "FCFS",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 2119.9,
+      "solve_seconds_mean": 0.001067833334673196,
+      "changed_operations_mean": 0
+    },
+    {
+      "algorithm": "FCFS-repair",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 2169.1,
+      "solve_seconds_mean": 0.0004202399989784074,
+      "changed_operations_mean": 8
+    },
+    {
+      "algorithm": "SPT",
+      "count": 3,
+      "feasible_rate": 1.0,
+      "makespan_mean": 2059.7,
+      "solve_seconds_mean": 0.0010693600003529962,
+      "changed_operations_mean": 0
+    }
+  ],
+  "duration_seconds": 6.792192580003757,
+  "finished_at": "2026-11-17T07:53:36.907272+00:00",
+  "case_count": 1
+}

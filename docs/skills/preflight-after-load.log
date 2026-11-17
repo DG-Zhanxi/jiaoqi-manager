@@ -1,0 +1,6 @@
+{"timestamp": "2026-11-17T07:54:34.283041+00:00", "level": "INFO", "event": "preflight.fixed_config", "root_ok": true, "port_ok": true}
+{"timestamp": "2026-11-17T07:54:34.283175+00:00", "level": "INFO", "event": "preflight.root", "exists": true}
+{"timestamp": "2026-11-17T07:54:34.329693+00:00", "level": "INFO", "event": "preflight.health", "ok": true}
+{"timestamp": "2026-11-17T07:54:34.330526+00:00", "level": "INFO", "event": "preflight.pid", "pid": 10778, "verified": true}
+{"timestamp": "2026-11-17T07:54:34.330709+00:00", "level": "INFO", "event": "preflight.disk", "free_gb": 44.99, "sufficient": true}
+{"timestamp": "2026-11-17T07:54:34.330838+00:00", "level": "INFO", "event": "preflight.complete", "all_passed": true}

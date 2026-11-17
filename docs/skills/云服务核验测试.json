@@ -1,0 +1,10 @@
+{
+  "tests_passed": 4,
+  "cases": [
+    "foreign_host_rejected",
+    "embedded_credentials_rejected",
+    "branch_name_rejected",
+    "mismatched_commit_rejected"
+  ],
+  "live_anonymous_read": "passed"
+}

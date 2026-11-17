@@ -79,6 +79,10 @@ python app/scripts/复现实验.py --suite full --seconds 5 --seeds 3 --workspac
 
 开源版已通过56项自动测试、21次焊装复验、前端构建及全新数据库的注册和工作区创建。[验证记录](docs/版本验证.json)
 
+## Skills与关联云服务
+
+已建立CodeArts Repo公开源码镜像，并完成AI开发者空间中的真实同版重部署。提供关联服务核验和部署两个项目级Skill，64项Skill测试与54项云端应用回归测试通过。[Skills部署与云服务说明](docs/Skills部署与云服务.md)
+
 ## 开发
 
 ```bash

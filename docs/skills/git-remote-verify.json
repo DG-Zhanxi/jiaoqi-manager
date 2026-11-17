@@ -1,0 +1,9 @@
+{
+  "remote_url": "https://codehub.devcloud.cn-southwest-2.huaweicloud.com/e7989a0bb95d41038306ce4b0a94fcf7/jiaoqi-manager.git",
+  "ref": "HEAD",
+  "returned_commit": "788d1985b4df986c09a22ca5e9002e92c77f19e6",
+  "expected_commit": "788d1985b4df986c09a22ca5e9002e92c77f19e6",
+  "match": true,
+  "exit_code": 0,
+  "timestamp": "2026-11-17T07:37:00Z"
+}

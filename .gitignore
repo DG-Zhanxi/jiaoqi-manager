@@ -28,3 +28,8 @@ experiments/1/*
 !experiments/1/0066ca7557924981aefb11cd1cb07f0e.json
 !experiments/1/2c44300235aa4672901d96ef1adbc621.json
 reports/
+
+# Reviewed deployment evidence
+!docs/skills/deployment-run.log
+!docs/skills/project-pytest.log
+!docs/skills/preflight-after-load.log

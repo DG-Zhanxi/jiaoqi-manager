@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.16, pytest-9.2.0, pluggy-1.7.0
+rootdir: /root/JiaoqiManager/app
+configfile: pytest.ini
+plugins: anyio-4.16.0
+collected 54 items
+
+app/tests/test_auth_security.py ........                                 [ 14%]
+app/tests/test_extensions.py .....                                       [ 24%]
+app/tests/test_feature_completion.py .....                               [ 33%]
+app/tests/test_hfut_dataset.py ......                                    [ 44%]
+app/tests/test_orders_resources.py .......                               [ 57%]
+app/tests/test_plans_events.py .......                                   [ 70%]
+app/tests/test_review_regressions.py .....                               [ 79%]
+app/tests/test_scheduler.py ......                                       [ 90%]
+app/tests/test_workspaces_authz.py .....                                 [100%]
+
+============================= 54 passed in 12.27s ==============================

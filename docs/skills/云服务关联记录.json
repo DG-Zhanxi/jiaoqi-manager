@@ -1,0 +1,16 @@
+{
+  "service": "Huawei Cloud CodeArts Repo",
+  "repository": "https://codehub.devcloud.cn-southwest-2.huaweicloud.com/e7989a0bb95d41038306ce4b0a94fcf7/jiaoqi-manager.git",
+  "commit": "788d1985b4df986c09a22ca5e9002e92c77f19e6",
+  "anonymous_read": true,
+  "verified_at": "2026-11-17T07:33:49.417150+00:00",
+  "project_id": "e7989a0bb95d41038306ce4b0a94fcf7",
+  "repository_id": 8095130,
+  "service_plan": "CodeArts体验版",
+  "cost_cny": 0,
+  "auto_renew": false,
+  "valid_until": "2026-12-17 23:59:59 Asia/Shanghai",
+  "provisioning_agent": "Codex",
+  "skill": "jiaoqi-codearts-link",
+  "method": "按项目Skill通过已登录控制台创建独立项目、导入公开GitHub仓库并匿名核验提交"
+}

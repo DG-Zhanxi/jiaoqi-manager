@@ -1,0 +1,9 @@
+{
+  "platform": "华为云AI开发者空间 AI Shell",
+  "skill": "jiaoqi-cloud-deploy",
+  "directory": "/root/.agents/skills/jiaoqi-cloud-deploy",
+  "load_skill": "success",
+  "preflight": "all_passed=true",
+  "verified_pid": 10778,
+  "source": "实际云端会话及preflight-after-load.log"
+}
